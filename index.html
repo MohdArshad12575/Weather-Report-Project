@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+  </head>
+  <body >
+    <div class="card">
+      <div class="search">
+        <input type="text" id="city" placeholder="Enter your city here" />
+        <div class="search-icon">
+          <img src="/Images/search.png" alt="search-icon" />
+        </div>
+      </div>
+        <div class="weather-cont ">
+          <img
+            id="weather-img"
+            src="/Images/rain.png"
+            alt="rainy-weather-img"
+          />
+          <h1 id="celcius">22&#176c</h1>
+          <h2 id="city-name">Dubai</h2>
+          <div class="details">
+            <div class="col1">
+              <div>
+                <img
+                  id="humidity-img"
+                  src="/Images/humidity.png"
+                  alt="humidity-image"
+                />
+              </div>
+              <div class="col1-content">
+                <h3 id="humidity-percent">50%</h3>
+                <h4>Humidity</h4>
+              </div>
+            </div>
+            <div class="col2">
+              <div>
+                <img id="wind-img" src="/Images/wind.png" alt="wind-img" />
+              </div>
+              <div class="col2-content">
+                <h3 id="wind-speed">15 Km/h</h3>
+                <h4>Speed</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
